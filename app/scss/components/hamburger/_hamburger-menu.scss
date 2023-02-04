@@ -1,0 +1,32 @@
+.hamburger-menu__button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger-menu__button > .hamburger-menu__span,
+.hamburger-menu__button > .hamburger-menu__span::before,
+.hamburger-menu__button > .hamburger-menu__span::after {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.hamburger-menu__button > .hamburger-menu__span::before {
+  content: "";
+  top: -8px;
+}
+
+.hamburger-menu__button > .hamburger-menu__span::after {
+  content: "";
+  top: 8px;
+}

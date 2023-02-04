@@ -1,0 +1,21 @@
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq__content-item {
+  height: 100vh;
+  @media (max-width: 640px) {
+    height: 600px;
+  }
+}
+
+.faq__content-question,
+.faq__content-span {
+  font-weight: bold;
+}
+
+.faq__content-text_top {
+  margin-top: 20px;
+}

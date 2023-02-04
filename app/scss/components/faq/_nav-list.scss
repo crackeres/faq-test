@@ -1,0 +1,38 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  @media (max-width: 640px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    gap: 15px;
+  }
+}
+
+.nav-list_bottom {
+  margin-bottom: 50px;
+}
+
+.nav__item {
+  text-transform: uppercase;
+}
+
+.nav__item-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: $text-color;
+  @extend .transition;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.nav__item-link_active {
+  color: $accent;
+}
